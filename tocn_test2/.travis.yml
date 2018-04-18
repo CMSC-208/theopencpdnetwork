@@ -13,8 +13,8 @@ install:
 script: skip
 
 after_success:
-  - "find app -type f -exec curl --ftp-create-dirs -T {} -u $theopencpdnetwork:$Admin123 ftp://files.000webhost.com/public_html/{} \\;"
-  - "curl -T index.html --ftp-create-dirs -T {} -u $theopencpdnetwork:$Admin123 ftp://files.000webhost.com/public_html/"
+  - "find app -type f -exec curl --ftp-create-dirs -T {} -u $theopencpdnetwork:$Admin.123 ftp://files.000webhost.com/public_html/{} \\;"
+  - "curl -T index.html --ftp-create-dirs -T {} -u $theopencpdnetwork:$Admin.123 ftp://files.000webhost.com/public_html/"
 
 #env:
   #global:
